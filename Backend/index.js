@@ -9,16 +9,16 @@ import userRouter from "./routes/user.route.js"
 import interviewRouter from "./routes/interview.route.js"
 import paymentRouter from "./routes/payment.route.js"
 
-const PORT = process.env.PORT||6000
-const app = express() 
+const PORT = process.env.PORT || 6000
+const app = express()
 
 // app.get("/", (req, res)=>{
 //     return res.json({message : "Server Started"})
 // })
 
 app.use(cors({
-    origin : "https://mern-authentication-1frontend.onrender.com/",
-    credentials : true
+  origin: "https://mern-authentication-1frontend.onrender.com",
+  credentials: true
 }))
 
 app.use(express.json())
